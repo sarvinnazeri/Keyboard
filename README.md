@@ -6,7 +6,7 @@
   
 - Developed by sarvin nazeri
 
-- Created - 2024-8-28
+- Created - 2024-9-3
 
 - Technologies Used - Html , css , tailwind , js
 
