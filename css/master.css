@@ -1,0 +1,141 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.keyboard {
+    background: #999;
+    border-radius: 4px;
+    color: #555;
+    font: bold 16px Helvetica, Arial;
+    margin: 10px 15px 25px 0;
+    padding: 8px;
+    position: relative;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    width: 875px;
+    zoom: 0.9;
+}
+
+.key {
+    background: -webkit-linear-gradient(left,
+            #ccc 0%,
+            #d8d8d8 20px,
+            #e5e5e5 35px,
+            #fafafa 100%);
+    border: 6px solid transparent;
+    border-width: 5px 5px 8px 6px;
+    border-image: -moz-linear-gradient(top,
+            #999 0%,
+            #bbb 45%,
+            #bbb 55%,
+            #ccc 95%,
+            #ddd 100%) 49%;
+    border-image: -webkit-linear-gradient(top,
+            #999 0%,
+            #bbb 45%,
+            #bbb 55%,
+            #ccc 95%,
+            #ddd 100%) 49%;
+    box-shadow: 3px -5px 6px rgba(100, 100, 100, 0.6),
+        -4px -4px 6px rgba(100, 100, 100, 0.4),
+        4px -2px 5px rgba(100, 100, 100, 0.5);
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    height: 60px;
+    margin: 1px 0;
+    padding: 2px 0 0 5px;
+    position: relative;
+    vertical-align: top;
+}
+
+.key:active {
+    background: -moz-linear-gradient(left,
+            #c8c8c8 0%,
+            #d8d8d8 20px,
+            #e5e5e5 35px,
+            #fafafa 100%);
+    background: -webkit-linear-gradient(left,
+            #c8c8c8 0%,
+            #d8d8d8 20px,
+            #e5e5e5 35px,
+            #fafafa 100%);
+    box-shadow: 1px -3px 6px rgba(100, 100, 100, 0.6),
+        -3px -3px 6px rgba(100, 100, 100, 0.3),
+        4px -2px 6px rgba(100, 100, 100, 0.3);
+    top: 1px;
+}
+
+.w2 {
+    text-transform: uppercase;
+    width: 54px;
+}
+
+.w3 {
+    width: 83px;
+}
+
+.w4 {
+    width: 112px;
+}
+
+.w5 {
+    width: 141px;
+}
+
+.w12 {
+    width: 344px;
+}
+
+.screen {
+    text-align: left;
+    border: 5px solid #444;
+    border-radius: 10px;
+    height: 300px;
+    overflow: auto;
+    padding: 5px;
+    width: 80% !important;
+
+    >p {
+        >span {}
+    }
+}
+
+@-webkit-keyframe blinker {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#a,
+.a {
+    width: 100%;
+}
+
+.clear {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    >button {
+        width: 40%;
+        height: 40px;
+    }
+}
